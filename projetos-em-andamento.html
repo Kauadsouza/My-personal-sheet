@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto em Desenvolvimento</title>
+    <style>
+        :root {
+            --primary-color: #6C63FF;
+            --text-color: #E0E0E0;
+            --bg-color: #121212;
+            --secondary-bg: #1E1E1E;
+            --hover-color: #7D76FF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--secondary-bg);
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .language-switcher {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .language-btn {
+            background: none;
+            border: 1px solid var(--primary-color);
+            color: var(--text-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .language-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .language-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .construction-message {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        .construction-icon {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--secondary-bg);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .construction-message {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Kaua Diniz</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button class="language-btn active">PT</button>
+            <button class="language-btn">EN</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="construction-icon">🚧</div>
+        <h1 class="construction-message">Projeto em Desenvolvimento</h1>
+        <p>Estamos trabalhando duro para trazer algo incrível para você!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Kaua Diniz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para alternar entre idiomas
+        document.querySelectorAll('.language-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.language-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                if (this.textContent === 'EN') {
+                    // Mudar para inglês
+                    document.querySelector('.construction-message').textContent = 'Project Under Development';
+                    document.querySelector('main p').textContent = 'We are working hard to bring something amazing to you!';
+                } else {
+                    // Mudar para português
+                    document.querySelector('.construction-message').textContent = 'Projeto em Desenvolvimento';
+                    document.querySelector('main p').textContent = 'Estamos trabalhando duro para trazer algo incrível para você!';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

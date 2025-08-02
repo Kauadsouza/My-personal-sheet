@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauã Diniz | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Professional portfolio of Kauã Diniz. Founder of Null Forge. Passionate about technology and education.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-dark text-light">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div id="loader" class="fixed inset-0 bg-darker z-50 flex flex-col items-center justify-center gap-4">
+        <div class="loader"></div>
+        <p class="text-lightSecondary animate-pulse">Loading...</p>
+    </div>
+    <nav class="fixed w-full bg-dark bg-opacity-90 backdrop-blur-md z-40 border-b border-darkTertiary">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-light hover:text-primary transition-colors duration-300">Kauã Diniz</a>
+            <div class="hidden md:flex items-center gap-8">
+                <ul class="flex gap-6">
+                    <li><a href="#home" class="nav-link text-lightSecondary hover:text-primary transition-colors duration-300">Home</a></li>
+                    <li><a href="#about" class="nav-link text-lightSecondary hover:text-primary transition-colors duration-300">About</a></li>
+                    <li><a href="#projects" class="nav-link text-lightSecondary hover:text-primary transition-colors duration-300">Projects</a></li>
+                    <li><a href="#contact" class="nav-link text-lightSecondary hover:text-primary transition-colors duration-300">Contact</a></li>
+                </ul>
+                <div class="language-switch" id="languageSwitch">
+                    <div class="language-switch-inner">PT</div>
+                </div>
+            </div>
+            <div class="md:hidden flex items-center gap-4">
+                <div class="language-switch" id="languageSwitchMobile">
+                    <div class="language-switch-inner">PT</div>
+                </div>
+                
+                <button class="hamburger flex flex-col justify-center items-center gap-1.5 w-6 h-6" id="mobileMenuButton">
+                    <span class="block w-6 h-0.5 bg-light"></span>
+                    <span class="block w-6 h-0.5 bg-light"></span>
+                    <span class="block w-6 h-0.5 bg-light"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu fixed inset-y-0 right-0 w-64 bg-darkSecondary z-30 p-6 pt-24 shadow-2xl" id="mobileMenu">
+        <ul class="flex flex-col gap-6">
+            <li><a href="#home" class="block text-xl text-lightSecondary hover:text-primary transition-colors duration-300">Home</a></li>
+            <li><a href="#about" class="block text-xl text-lightSecondary hover:text-primary transition-colors duration-300">About</a></li>
+            <li><a href="#projects" class="block text-xl text-lightSecondary hover:text-primary transition-colors duration-300">Projects</a></li>
+            <li><a href="#contact" class="block text-xl text-lightSecondary hover:text-primary transition-colors duration-300">Contact</a></li>
+        </ul>
+        
+        <div class="mt-8 flex gap-4">
+            <a href="https://github.com/Kauadsouza" target="_blank" class="text-lightSecondary hover:text-primary transition-colors duration-300 text-xl">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/kaua-diniz-0888b4261" target="_blank" class="text-lightSecondary hover:text-primary transition-colors duration-300 text-xl">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:kauadsouza@gmail.com" class="text-lightSecondary hover:text-primary transition-colors duration-300 text-xl">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 pb-16 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/2 animate-fade-in-up">
+                <h4 class="text-primary text-lg md:text-xl mb-2">Hello, I'm</h4>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">Kauã Diniz</h1>
+                <h2 class="text-xl md:text-2xl lg:text-3xl text-lightSecondary mb-6">
+                    Founder of <span class="text-primary">Null Forge</span>
+                    <br>
+                    Creating solutions that impact lives
+                </h2>
+                <p class="text-lightSecondary mb-8 max-w-lg">
+                    Passionate about technology, education and innovation. Dedicated to building tools that empower people through code.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="btn-primary px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:shadow-lg hover:shadow-primary/30 transition-all duration-300">
+                        Hire Me
+                    </a>
+                    <a href="projetos-em-andamento.html" class="btn-secondary px-6 py-3 rounded-full border border-primary text-white font-medium hover:bg-primary/10 transition-all duration-300">
+                        View Projects
+                    </a>
+                </div>
+                
+                <div class="mt-12 flex gap-4">
+                    <a href="https://github.com/Kauadsouza" target="_blank" class="social-icon w-10 h-10 rounded-full bg-darkTertiary flex items-center justify-center text-lightSecondary hover:text-primary hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/kaua-diniz-0888b4261" target="_blank" class="social-icon w-10 h-10 rounded-full bg-darkTertiary flex items-center justify-center text-lightSecondary hover:text-primary hover:-translate-y-1 transition-all duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="mailto:kauadsouza@gmail.com" class="social-icon w-10 h-10 rounded-full bg-darkTertiary flex items-center justify-center text-lightSecondary hover:text-primary hover:-translate-y-1 transition-all duration-300">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center animate-fade-in-up">
+                <div class="hexagon">
+                    <div class="hexagon-inner">
+                        <img src="my photo.jpg" alt="Kauã Diniz" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-lightSecondary hover:text-primary transition-colors duration-300">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-darker">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+                   My Journey
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
+                </h2>
+                <p class="text-lightSecondary max-w-2xl mx-auto">Get to know more about me and my skills</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/3 flex justify-center">
+                    <div class="hexagon">
+                        <div class="hexagon-inner">
+                            <!-- Placeholder for profile image -->
+                            <div class="w-full h-full bg-darkTertiary flex items-center justify-center">
+    <img src="my photo.jpg" alt="Minha Foto" class="w-full h-full object-cover">
+</div>
+</div>
+</div>
+</div>
+
+<div class="lg:w-2/3">
+    <h3 class="text-2xl md:text-3xl font-bold mb-6">Innovation Through Technology</h3>
+    <p class="text-lightSecondary mb-4">
+        Desde pequeno, sempre enxerguei a tecnologia de um jeito diferente. Pra mim, ela nunca foi só sobre criar coisas legais — era sobre transformar o que já existe, sobre encontrar novas formas de fazer o mundo girar. Enquanto muita gente ainda pensava no que queria ser no futuro, eu já estava de cabeça em projetos que realmente tocavam a vida das pessoas. Tenho essa inquietação constante dentro de mim, aquela sensação de que nasci pra algo maior. E, sinceramente? Acho que esse “algo maior” começa no código… mas não termina ali.  Meu sonho é estudar em uma grande universidade nos Estados Unidos — lugares como Harvard, MIT ou Stanford. Não é só pelo nome, pela fama, nada disso. É porque eu acredito de verdade que esses lugares reúnem os maiores desafios, os melhores mentores e as mentes mais inquietas do planeta. É onde eu quero estar. A Null Forge, meu projeto, foi só o primeiro passo de uma caminhada muito maior. Eu acredito com todas as forças que ensinar programação pode mudar destinos. E quero seguir firme nessa missão, cercado de pessoas que também acreditam que a tecnologia pode ser ponte, e não barreira.Eu nunca fui do tipo que se contenta com o “bom o suficiente”. Quero ir além. Não por vaidade, mas porque sei que é lá na frente, no topo, que posso crescer de verdade e causar o impacto que sonho. Cada detalhe deste site, cada projeto que coloco no mundo, cada hora que invisto nos meus estudos carrega uma parte de quem eu sou: alguém que busca fazer tudo com propósito, coragem e verdade. Cada linha de código que eu escrevo não vem só do que eu sei — vem do que eu acredito. E essa jornada… tá só começando.</p>
+   
+ 
+    <div class="mb-8">
+        <div class="mb-4">
+            <div class="flex justify-between mb-2">
+                <span class="font-medium">Technology</span>
+                <span class="text-primary">95%</span>
+            </div>
+            <div class="w-full bg-darkTertiary h-2 rounded-full">
+                <div class="bg-gradient-to-r from-primary to-secondary h-2 rounded-full" style="width: 95%"></div>
+            </div>
+        </div>
+        
+        <div class="mb-4">
+            <div class="flex justify-between mb-2">
+                <span class="font-medium">Education</span>
+                <span class="text-primary">90%</span>
+            </div>
+            <div class="w-full bg-darkTertiary h-2 rounded-full">
+                <div class="bg-gradient-to-r from-primary to-secondary h-2 rounded-full" style="width: 90%"></div>
+            </div>
+        </div>
+        
+        <div class="mb-4">
+            <div class="flex justify-between mb-2">
+                <span class="font-medium">Innovation</span>
+                <span class="text-primary">85%</span>
+            </div>
+            <div class="w-full bg-darkTertiary h-2 rounded-full">
+                <div class="bg-gradient-to-r from-primary to-secondary h-2 rounded-full" style="width: 85%"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex flex-wrap gap-4">
+        <a href="#" class="btn-primary px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:shadow-lg hover:shadow-primary/30 transition-all duration-300">
+            Download CV
+        </a>
+        <a href="#contact" class="btn-secondary px-6 py-3 rounded-full border border-primary text-white font-medium hover:bg-primary/10 transition-all duration-300">
+            Let's Talk
+        </a>
+    </div>
+</div>
+</div>
+</div>
+</section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-darkSecondary">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+                    My Projects
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
+                </h2>
+                <p class="text-lightSecondary max-w-2xl mx-auto">Some of my recent work and contributions</p>
+            </div>
+            
+            <div class="flex justify-center mb-12">
+                <div class="flex flex-wrap gap-2">
+                    <button class="filter-btn px-4 py-2 rounded-full bg-dark text-lightSecondary hover:bg-primary hover:text-white transition-all duration-300 active" data-filter="all">
+                        All
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-full bg-dark text-lightSecondary hover:bg-primary hover:text-white transition-all duration-300" data-filter="web">
+                        Web
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-full bg-dark text-lightSecondary hover:bg-primary hover:text-white transition-all duration-300" data-filter="app">
+                        Apps
+                    </button>
+                    <button class="filter-btn px-4 py-2 rounded-full bg-dark text-lightSecondary hover:bg-primary hover:text-white transition-all duration-300" data-filter="design">
+                        Design
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card rounded-xl overflow-hidden bg-darkTertiary" data-category="web">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Null Forge" class="w-full h-full object-cover">
+                        <div class="project-info">
+                            <h3 class="text-xl font-bold mb-1">Null Forge</h3>
+                            <p class="text-lightSecondary text-sm mb-3">Educational platform for beginner developers</p>
+                            <a href="projetos-em-andamento.html" class="text-primary text-sm font-medium hover:underline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card rounded-xl overflow-hidden bg-darkTertiary" data-category="app">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Productivity App" class="w-full h-full object-cover">
+                        <div class="project-info">
+                            <h3 class="text-xl font-bold mb-1">Productivity App</h3>
+                            <p class="text-lightSecondary text-sm mb-3">Mobile application for task management</p>
+                            <a href="projetos-em-andamento.html" class="text-primary text-sm font-medium hover:underline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card rounded-xl overflow-hidden bg-darkTertiary" data-category="design">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="UI/UX Design" class="w-full h-full object-cover">
+                        <div class="project-info">
+                            <h3 class="text-xl font-bold mb-1">UI/UX Design</h3>
+                            <p class="text-lightSecondary text-sm mb-3">Modern interface design system</p>
+                            <a href="projetos-em-andamento.html" class="text-primary text-sm font-medium hover:underline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card rounded-xl overflow-hidden bg-darkTertiary" data-category="web">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1440&q=80" alt="E-commerce" class="w-full h-full object-cover">
+                        <div class="project-info">
+                            <h3 class="text-xl font-bold mb-1">E-commerce</h3>
+                            <p class="text-lightSecondary text-sm mb-3">Online store with payment integration</p>
+                            <a href="projetos-em-andamento.html" class="text-primary text-sm font-medium hover:underline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card rounded-xl overflow-hidden bg-darkTertiary" data-category="app">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Finance App" class="w-full h-full object-cover">
+                        <div class="project-info">
+                            <h3 class="text-xl font-bold mb-1">Finance App</h3>
+                            <p class="text-lightSecondary text-sm mb-3">Personal finance management tool</p>
+                            <a href="projetos-em-andamento.html" class="text-primary text-sm font-medium hover:underline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card rounded-xl overflow-hidden bg-darkTertiary" data-category="design">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Brand Identity" class="w-full h-full object-cover">
+                        <div class="project-info">
+                            <h3 class="text-xl font-bold mb-1">Brand Identity</h3>
+                            <p class="text-lightSecondary text-sm mb-3">Visual identity and branding</p>
+                            <a href="projetos-em-andamento.html" class="text-primary text-sm font-medium hover:underline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="projetos-em-andamento.html" class="btn-primary px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 inline-block">
+                    View More Projects
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-darker">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+                    Get In Touch
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
+                </h2>
+                <p class="text-lightSecondary max-w-2xl mx-auto">Feel free to reach out for collaborations or just a friendly hello</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6">Let's Work Together</h3>
+                    <p class="text-lightSecondary mb-8">
+                        I'm always open to new opportunities and collaborations. If you have a project in mind or just want to chat, get in touch!
+                    </p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="text-primary text-xl mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <a href="mailto:kauadsouza@gmail.com" class="text-lightSecondary hover:text-primary transition-colors duration-300">kauadsouza@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="text-primary text-xl mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <a href="tel:+55(34)99683-1030" class="text-lightSecondary hover:text-primary transition-colors duration-300">+55(34)99683-1030</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="text-primary text-xl mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Location</h4>
+                                <span class="text-lightSecondary">Uberlandia, Brazil</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <a href="https://github.com/Kauadsouza" target="_blank" class="social-icon w-12 h-12 rounded-full bg-darkTertiary flex items-center justify-center text-lightSecondary hover:text-primary hover:-translate-y-1 transition-all duration-300">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/kaua-diniz-0888b4261" target="_blank" class="social-icon w-12 h-12 rounded-full bg-darkTertiary flex items-center justify-center text-lightSecondary hover:text-primary hover:-translate-y-1 transition-all duration-300">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="mailto:kauadsouza@gmail.com" class="social-icon w-12 h-12 rounded-full bg-darkTertiary flex items-center justify-center text-lightSecondary hover:text-primary hover:-translate-y-1 transition-all duration-300">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-input" required>
+                            <label for="name" class="form-label">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-input" required>
+                            <label for="email" class="form-label">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-input" required>
+                            <label for="subject" class="form-label">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" class="form-input" rows="5" required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-dark">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kauã Diniz</h3>
+                    <p class="text-lightSecondary">
+                        Creating solutions that impact. Passionate about technology, education and innovation.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-lightSecondary hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-lightSecondary hover:text-primary transition-colors duration-300">About</a></li>
+                        <li><a href="#projects" class="text-lightSecondary hover:text-primary transition-colors duration-300">Projects</a></li>
+                        <li><a href="#contact" class="text-lightSecondary hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Projects</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-lightSecondary hover:text-primary transition-colors duration-300">Null Forge</a></li>
+                        <li><a href="#" class="text-lightSecondary hover:text-primary transition-colors duration-300">Productivity App</a></li>
+                        <li><a href="#" class="text-lightSecondary hover:text-primary transition-colors duration-300">UI/UX Design</a></li>
+                        <li><a href="#" class="text-lightSecondary hover:text-primary transition-colors duration-300">E-commerce</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li><a href="mailto:kauadsouza@gmail.com" class="text-lightSecondary hover:text-primary transition-colors duration-300">kauadsouza@gmail.com</a></li>
+                        <li><a href="tel:+55(34)99683-1030" class="text-lightSecondary hover:text-primary transition-colors duration-300">+55(34)99683-1030</a></li>
+                        <li class="text-lightSecondary">Uberlandia, Brazil</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-darkTertiary flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-lightSecondary text-sm">
+                    &copy; <span id="currentYear"></span> Kauã Diniz. All rights reserved.
+                </p>
+                
+                <div class="flex gap-4">
+                    <a href="https://github.com/Kauadsouza" target="_blank" class="text-lightSecondary hover:text-primary transition-colors duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/kaua-diniz-0888b4261" target="_blank" class="text-lightSecondary hover:text-primary transition-colors duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:kauadsouza@gmail.com" class="text-lightSecondary hover:text-primary transition-colors duration-300">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#home" id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gradient-to-r from-primary to-secondary text-white flex items-center justify-center shadow-lg hover:shadow-primary/30 transition-all duration-300 opacity-0 invisible z-40">
+        <i class="fas fa-arrow-up"></i>
+        <script src="script.js"></script>
+    </a>
+</body>
+</html>
