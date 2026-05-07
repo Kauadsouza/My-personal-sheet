@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "headline": "Construyendo el futuro, una línea de código a la vez.",
+    "sub": "18 años. Brasileño. Desarrollador, fundador de Null Forge, futuro estudiante de Ciencias de la Computación con miras a las Ivy League.",
+    "ctaPrimary": "Ver proyectos",
+    "ctaSecondary": "Hablemos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "readMore": "Leer la historia completa",
+    "bio1": "Desarrollador brasileño de 18 años. Actualmente construyo sistemas en una empresa de logística, soy cofundador de The Kaden (SaaS de automatización para WhatsApp), fundador de Null Forge y estudiante de último año de secundaria en Uberlândia, Brasil.",
+    "bio2": "Enfocado en productos con impacto real, código limpio y calidad que se nota. Cada línea de código es una declaración de intención.",
+    "values": {
+      "discipline": {
+        "title": "Disciplina",
+        "desc": "La constancia supera al talento. Cada día cuenta."
+      },
+      "vision": {
+        "title": "Visión",
+        "desc": "Veo más allá del código — producto, impacto, legado."
+      },
+      "impact": {
+        "title": "Impacto",
+        "desc": "Lo que construyo necesita cambiar algo en el mundo real."
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "featured": "Proyectos destacados",
+    "viewAll": "Ver todos",
+    "viewProject": "Ver caso de estudio",
+    "filter": "Filtrar por tecnología",
+    "all": "Todos",
+    "challenge": "El desafío",
+    "solution": "La solución",
+    "results": "Resultados",
+    "stack": "Stack técnico",
+    "liveLink": "Ver en vivo",
+    "githubLink": "Ver código",
+    "nextProject": "Próximo proyecto"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Leer artículo",
+    "readingTime": "min de lectura",
+    "latestPosts": "Últimos artículos",
+    "viewAll": "Ver todos los artículos",
+    "nextPost": "Artículo siguiente",
+    "prevPost": "Artículo anterior",
+    "filterByTag": "Filtrar por etiqueta"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Hablemos.",
+    "location": "Uberlândia, MG — Brasil",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@correo.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Nombre de la empresa (opcional)",
+      "type": "Tipo de contacto",
+      "types": {
+        "proposal": "Propuesta",
+        "partnership": "Alianza",
+        "chat": "Solo charlar",
+        "other": "Otro"
+      },
+      "budget": "Presupuesto estimado",
+      "budgets": {
+        "none": "Prefiero no decir",
+        "under5k": "Menos de R$ 5.000",
+        "5to15k": "R$ 5.000 – R$ 15.000",
+        "15to50k": "R$ 15.000 – R$ 50.000",
+        "over50k": "Más de R$ 50.000"
+      },
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame lo que tienes en mente...",
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado! Responderé en menos de 48h.",
+      "error": "Algo salió mal. Por favor, inténtalo de nuevo.",
+      "rateLimited": "Demasiados intentos. Espera antes de intentarlo de nuevo.",
+      "errors": {
+        "nameRequired": "El nombre es obligatorio",
+        "emailInvalid": "Correo electrónico inválido",
+        "messageMin": "El mensaje debe tener al menos 20 caracteres",
+        "typeRequired": "Selecciona un tipo de contacto"
+      }
+    }
+  },
+  "newsletter": {
+    "title": "Recibe mis aprendizajes sobre código, producto y construcción de carrera.",
+    "sub": "Sin spam. Solo cuando tenga algo que valga tu atención.",
+    "placeholder": "tu@correo.com",
+    "button": "Suscribirme",
+    "subscribing": "Suscribiendo...",
+    "success": "Suscripción confirmada. Hasta pronto.",
+    "error": "Algo salió mal. Por favor, inténtalo de nuevo.",
+    "rateLimited": "Demasiados intentos. Espera un momento."
+  },
+  "footer": {
+    "nav": "Navegación",
+    "projects": "Proyectos",
+    "connect": "Conectar",
+    "settings": "Configuración",
+    "theme": "Tema",
+    "language": "Idioma",
+    "copyright": "Kauã Diniz Souza. Todos los derechos reservados.",
+    "builtWith": "Construido con Next.js y Vercel."
+  },
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "github": {
+    "title": "Actividad en GitHub",
+    "repos": "repositorios públicos",
+    "topLanguage": "Lenguaje principal",
+    "recentRepos": "Actualizados recientemente",
+    "contributions": "Contribuciones"
+  },
+  "stack": {
+    "title": "Stack",
+    "subtitle": "Tecnologías que uso a diario"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "sub": "La página que buscas no existe.",
+    "back": "Volver al inicio"
+  },
+  "aboutPage": {
+    "headline": "Una línea a la vez.",
+    "subHeadline": "La historia de un desarrollador de 18 años que empezó de cero.",
+    "quote": "If you're reading this, it's because someday you'll hear my name again.",
+    "timeline": {
+      "title": "Línea de tiempo",
+      "2023": {
+        "year": "2023",
+        "title": "El reinicio",
+        "desc": "Después de reprobar un año escolar, tomé una decisión: dejar de perder el tiempo y empezar a construir algo real. Mis padres apostaron por mí. Comencé a estudiar programación con disciplina."
+      },
+      "2024": {
+        "year": "2024",
+        "title": "Trabajo + escuela nocturna",
+        "desc": "Combiné el trabajo diurno con la escuela nocturna. Cada hora libre era dedicada al código. Aprendí que construir una carrera se trata de constancia, no de talento."
+      },
+      "2025": {
+        "year": "2025",
+        "title": "Escuela privada + proyectos reales",
+        "desc": "Me cambié a una escuela privada. Lancé proyectos reales. Fundé Null Forge. Me convertí en cofundador de The Kaden. El código empezó a tener impacto tangible."
+      },
+      "2026": {
+        "year": "2026",
+        "title": "Presente",
+        "desc": "Desarrollador en una empresa de logística. Construyendo una nueva agencia. Preparando candidaturas para universidades internacionales de primer nivel."
+      },
+      "future": {
+        "year": "Futuro",
+        "title": "Ivy League",
+        "desc": "MIT, Harvard, Oxford. El destino está definido. El camino está siendo recorrido."
+      }
+    },
+    "letter": {
+      "p1": "En 2023, estaba perdido. Había reprobado un año escolar. Mis padres invirtieron en mí de una manera que me hizo ver cuánto estaba desperdiciando. Fue un golpe de realidad que cambió todo.",
+      "p2": "Decidí apostar por la programación. No porque fuera fácil, sino porque era el único camino que tenía sentido. Empecé a estudiar con disciplina real por primera vez en mi vida.",
+      "p3": "En 2024, trabajaba de día y estudiaba de noche. Cada feriado, cada fin de semana, cada descanso se convertía en aprendizaje. Aprendí que la disciplina es más poderosa que el talento.",
+      "p4": "En 2025, las cosas empezaron a encajar. Me cambié a una escuela privada. Lancé proyectos que resuelven problemas reales. Fundé Null Forge. Me convertí en cofundador de The Kaden.",
+      "p5": "Hoy, en 2026, desarrollo sistemas en una empresa de logística y construyo una nueva agencia. Mi objetivo es claro: universidades internacionales de primer nivel — MIT, Harvard, Oxford. No es un sueño. Es un plan."
+    }
+  }
+}

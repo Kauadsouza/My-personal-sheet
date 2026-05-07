@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "blog": "Blog",
+    "contact": "Contato"
+  },
+  "hero": {
+    "headline": "Construindo o futuro, uma linha de código por vez.",
+    "sub": "18 anos. Brasileiro. Desenvolvedor, fundador da Null Forge, futuro estudante de Ciência da Computação rumo à Ivy League.",
+    "ctaPrimary": "Ver projetos",
+    "ctaSecondary": "Falar comigo"
+  },
+  "about": {
+    "title": "Sobre",
+    "readMore": "Ler história completa",
+    "bio1": "Desenvolvedor brasileiro de 18 anos. Atualmente construo sistemas em uma empresa de logística, sou cofundador da The Kaden (SaaS de automação WhatsApp), fundador da Null Forge e estudante do terceiro ano em Uberlândia-MG.",
+    "bio2": "Foco em produtos com impacto real, código limpo e qualidade que se nota. Cada linha de código é uma declaração de intenção.",
+    "values": {
+      "discipline": {
+        "title": "Disciplina",
+        "desc": "Consistência supera talento. Todo dia conta."
+      },
+      "vision": {
+        "title": "Visão",
+        "desc": "Enxergo além do código — produto, impacto, legado."
+      },
+      "impact": {
+        "title": "Impacto",
+        "desc": "O que construo precisa mudar algo no mundo real."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "featured": "Projetos em destaque",
+    "viewAll": "Ver todos",
+    "viewProject": "Ver case study",
+    "filter": "Filtrar por tecnologia",
+    "all": "Todos",
+    "challenge": "O desafio",
+    "solution": "A solução",
+    "results": "Resultados",
+    "stack": "Stack técnica",
+    "liveLink": "Ver ao vivo",
+    "githubLink": "Ver código",
+    "nextProject": "Próximo projeto"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Ler post",
+    "readingTime": "min de leitura",
+    "latestPosts": "Últimos posts",
+    "viewAll": "Ver todos os posts",
+    "nextPost": "Próximo post",
+    "prevPost": "Post anterior",
+    "filterByTag": "Filtrar por tag"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Tem um projeto em mente? Vamos conversar.",
+    "location": "Uberlândia, MG — Brasil",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Seu nome completo",
+      "email": "Email",
+      "emailPlaceholder": "seu@email.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Nome da empresa (opcional)",
+      "type": "Tipo de contato",
+      "types": {
+        "proposal": "Proposta",
+        "partnership": "Parceria",
+        "chat": "Conversa",
+        "other": "Outro"
+      },
+      "budget": "Orçamento estimado",
+      "budgets": {
+        "none": "Não informar",
+        "under5k": "Até R$ 5.000",
+        "5to15k": "R$ 5.000 – R$ 15.000",
+        "15to50k": "R$ 15.000 – R$ 50.000",
+        "over50k": "Acima de R$ 50.000"
+      },
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte o que você tem em mente...",
+      "send": "Enviar mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada! Retorno em até 48h.",
+      "error": "Algo deu errado. Tente novamente.",
+      "rateLimited": "Muitas tentativas. Aguarde antes de enviar novamente.",
+      "errors": {
+        "nameRequired": "Nome é obrigatório",
+        "emailInvalid": "Email inválido",
+        "messageMin": "Mensagem deve ter no mínimo 20 caracteres",
+        "typeRequired": "Selecione um tipo de contato"
+      }
+    }
+  },
+  "newsletter": {
+    "title": "Receba meus aprendizados sobre código, produto e construção de carreira.",
+    "sub": "Sem spam. Só quando tiver algo que valha sua atenção.",
+    "placeholder": "seu@email.com",
+    "button": "Inscrever",
+    "subscribing": "Inscrevendo...",
+    "success": "Inscrição confirmada. Até breve.",
+    "error": "Algo deu errado. Tente novamente.",
+    "rateLimited": "Muitas tentativas. Aguarde um momento."
+  },
+  "footer": {
+    "nav": "Navegação",
+    "projects": "Projetos",
+    "connect": "Conecte-se",
+    "settings": "Configurações",
+    "theme": "Tema",
+    "language": "Idioma",
+    "copyright": "Kauã Diniz Souza. Todos os direitos reservados.",
+    "builtWith": "Construído com Next.js e Vercel."
+  },
+  "theme": {
+    "toggle": "Alternar tema",
+    "light": "Claro",
+    "dark": "Escuro"
+  },
+  "github": {
+    "title": "Atividade no GitHub",
+    "repos": "repositórios públicos",
+    "topLanguage": "Linguagem principal",
+    "recentRepos": "Atualizados recentemente",
+    "contributions": "Contribuições"
+  },
+  "stack": {
+    "title": "Stack",
+    "subtitle": "Tecnologias que uso no dia a dia"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "sub": "A página que você procura não existe.",
+    "back": "Voltar ao início"
+  },
+  "aboutPage": {
+    "headline": "Uma linha de cada vez.",
+    "subHeadline": "A história de um desenvolvedor de 18 anos que recomeçou do zero.",
+    "quote": "If you're reading this, it's because someday you'll hear my name again.",
+    "timeline": {
+      "title": "Linha do tempo",
+      "2023": {
+        "year": "2023",
+        "title": "O recomeço",
+        "desc": "Depois de repetir de ano, fiz uma escolha: parar de desperdiçar tempo e começar a construir algo de verdade. Meus pais apostaram em mim. Comecei a estudar programação com disciplina."
+      },
+      "2024": {
+        "year": "2024",
+        "title": "Trabalho + escola noturna",
+        "desc": "Conciliava trabalho durante o dia com escola à noite. Cada hora livre era dedicada a código. Aprendi que construir carreira é sobre consistência, não talento."
+      },
+      "2025": {
+        "year": "2025",
+        "title": "Escola particular + projetos reais",
+        "desc": "Voltei para uma escola particular. Lancei projetos reais. Fundei a Null Forge. Me tornei cofundador da The Kaden. O código começou a ter impacto tangível."
+      },
+      "2026": {
+        "year": "2026",
+        "title": "Presente",
+        "desc": "Desenvolvedor em uma empresa de logística. Construindo uma nova agência. Preparando candidatura para universidades internacionais de alto nível."
+      },
+      "future": {
+        "year": "Futuro",
+        "title": "Ivy League",
+        "desc": "MIT, Harvard, Oxford. O destino está definido. O caminho está sendo trilhado."
+      }
+    },
+    "letter": {
+      "p1": "Em 2023, eu estava perdido. Tinha repetido de ano. Meus pais investiram em mim de uma forma que me fez enxergar o quanto eu estava desperdiçando. Foi um choque de realidade que mudou tudo.",
+      "p2": "Decidi apostar em programação. Não porque era fácil — porque era o único caminho que fazia sentido. Comecei a estudar com disciplina real pela primeira vez na minha vida.",
+      "p3": "Em 2024, trabalhava durante o dia e estudava à noite. Cada feriado, cada fim de semana, cada hora de intervalo virava aprendizado. Aprendi que disciplina é mais poderosa que talento.",
+      "p4": "Em 2025, as coisas começaram a se encaixar. Voltei para uma escola particular. Lancei projetos que resolvem problemas reais. Fundei a Null Forge. Me tornei cofundador da The Kaden.",
+      "p5": "Hoje, em 2026, desenvolvo sistemas em uma empresa de logística e construo uma nova agência. Meu objetivo é claro: universidades de nível internacional — MIT, Harvard, Oxford. Não é um sonho. É um plano."
+    }
+  }
+}

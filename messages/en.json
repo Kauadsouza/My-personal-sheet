@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Building the future, one line of code at a time.",
+    "sub": "18 years old. Brazilian. Developer, founder of Null Forge, future Computer Science student aiming for the Ivy League.",
+    "ctaPrimary": "See projects",
+    "ctaSecondary": "Get in touch"
+  },
+  "about": {
+    "title": "About",
+    "readMore": "Read the full story",
+    "bio1": "18-year-old Brazilian developer. Currently building systems at a logistics company, co-founder of The Kaden (WhatsApp automation SaaS), founder of Null Forge, and high-school senior in Uberlândia, Brazil.",
+    "bio2": "Focused on products with real impact, clean code, and quality that's noticed. Every line of code is a statement of intent.",
+    "values": {
+      "discipline": {
+        "title": "Discipline",
+        "desc": "Consistency beats talent. Every day counts."
+      },
+      "vision": {
+        "title": "Vision",
+        "desc": "I see beyond the code — product, impact, legacy."
+      },
+      "impact": {
+        "title": "Impact",
+        "desc": "What I build needs to change something in the real world."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "featured": "Featured projects",
+    "viewAll": "View all",
+    "viewProject": "View case study",
+    "filter": "Filter by technology",
+    "all": "All",
+    "challenge": "The challenge",
+    "solution": "The solution",
+    "results": "Results",
+    "stack": "Tech stack",
+    "liveLink": "View live",
+    "githubLink": "View code",
+    "nextProject": "Next project"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Read post",
+    "readingTime": "min read",
+    "latestPosts": "Latest posts",
+    "viewAll": "View all posts",
+    "nextPost": "Next post",
+    "prevPost": "Previous post",
+    "filterByTag": "Filter by tag"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "location": "Uberlândia, MG — Brazil",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "company": "Company",
+      "companyPlaceholder": "Company name (optional)",
+      "type": "Contact type",
+      "types": {
+        "proposal": "Proposal",
+        "partnership": "Partnership",
+        "chat": "Just a chat",
+        "other": "Other"
+      },
+      "budget": "Estimated budget",
+      "budgets": {
+        "none": "Prefer not to say",
+        "under5k": "Under R$ 5,000",
+        "5to15k": "R$ 5,000 – R$ 15,000",
+        "15to50k": "R$ 15,000 – R$ 50,000",
+        "over50k": "Above R$ 50,000"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell me what you have in mind...",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent! I'll reply within 48h.",
+      "error": "Something went wrong. Please try again.",
+      "rateLimited": "Too many attempts. Please wait before trying again.",
+      "errors": {
+        "nameRequired": "Name is required",
+        "emailInvalid": "Invalid email address",
+        "messageMin": "Message must be at least 20 characters",
+        "typeRequired": "Please select a contact type"
+      }
+    }
+  },
+  "newsletter": {
+    "title": "Get my insights on code, product, and building a career.",
+    "sub": "No spam. Only when I have something worth your attention.",
+    "placeholder": "you@email.com",
+    "button": "Subscribe",
+    "subscribing": "Subscribing...",
+    "success": "Subscription confirmed. Talk soon.",
+    "error": "Something went wrong. Please try again.",
+    "rateLimited": "Too many attempts. Please wait a moment."
+  },
+  "footer": {
+    "nav": "Navigation",
+    "projects": "Projects",
+    "connect": "Connect",
+    "settings": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "copyright": "Kauã Diniz Souza. All rights reserved.",
+    "builtWith": "Built with Next.js and Vercel."
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "github": {
+    "title": "GitHub Activity",
+    "repos": "public repositories",
+    "topLanguage": "Top language",
+    "recentRepos": "Recently updated",
+    "contributions": "Contributions"
+  },
+  "stack": {
+    "title": "Stack",
+    "subtitle": "Technologies I use daily"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "sub": "The page you're looking for doesn't exist.",
+    "back": "Back to home"
+  },
+  "aboutPage": {
+    "headline": "One line at a time.",
+    "subHeadline": "The story of an 18-year-old developer who started over from scratch.",
+    "quote": "If you're reading this, it's because someday you'll hear my name again.",
+    "timeline": {
+      "title": "Timeline",
+      "2023": {
+        "year": "2023",
+        "title": "The restart",
+        "desc": "After failing a year of school, I made a choice: stop wasting time and start building something real. My parents bet on me. I started studying programming with discipline."
+      },
+      "2024": {
+        "year": "2024",
+        "title": "Work + night school",
+        "desc": "I balanced work during the day with school at night. Every free hour went to code. I learned that building a career is about consistency, not talent."
+      },
+      "2025": {
+        "year": "2025",
+        "title": "Private school + real projects",
+        "desc": "I transferred to a private school. Launched real projects. Founded Null Forge. Became co-founder of The Kaden. Code started having tangible impact."
+      },
+      "2026": {
+        "year": "2026",
+        "title": "Present",
+        "desc": "Developer at a logistics company. Building a new agency. Preparing applications for top international universities."
+      },
+      "future": {
+        "year": "Future",
+        "title": "Ivy League",
+        "desc": "MIT, Harvard, Oxford. The destination is set. The path is being walked."
+      }
+    },
+    "letter": {
+      "p1": "In 2023, I was lost. I had failed a year of school. My parents invested in me in a way that made me realize how much I was wasting. It was a reality check that changed everything.",
+      "p2": "I decided to bet on programming. Not because it was easy — because it was the only path that made sense. I started studying with real discipline for the first time in my life.",
+      "p3": "In 2024, I worked during the day and studied at night. Every holiday, every weekend, every break became learning time. I learned that discipline is more powerful than talent.",
+      "p4": "In 2025, things started clicking. I transferred to a private school. Launched projects that solve real problems. Founded Null Forge. Became co-founder of The Kaden.",
+      "p5": "Today, in 2026, I develop systems at a logistics company and build a new agency. My goal is clear: top international universities — MIT, Harvard, Oxford. It's not a dream. It's a plan."
+    }
+  }
+}
