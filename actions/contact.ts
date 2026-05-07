@@ -2,9 +2,6 @@
 
 import { z } from "zod";
 import { headers } from "next/headers";
-import { createElement } from "react";
-import { sendEmail } from "@/lib/email/resend";
-import { ContactEmail } from "@/lib/email/templates/contact";
 import { checkRateLimit } from "@/lib/rate-limit";
 
 const schema = z.object({
@@ -17,24 +14,12 @@ const schema = z.object({
   website: z.string().max(0).optional(),
 });
 
-const typeLabels: Record<string, string> = {
-  proposal: "Proposta",
-  partnership: "Parceria",
-  chat: "Conversa",
-  other: "Outro",
-};
-
 export async function submitContact(formData: unknown) {
   const parsed = schema.safeParse(formData);
-  if (!parsed.success) {
-    return { success: false, error: "validation" };
-  }
+  if (!parsed.success) return { success: false, error: "validation" };
 
-  const { name, email, company, type, budget, message, website } = parsed.data;
-
-  if (website && website.length > 0) {
-    return { success: true };
-  }
+  const { website } = parsed.data;
+  if (website && website.length > 0) return { success: true };
 
   const headersList = await headers();
   const ip =
@@ -46,21 +31,26 @@ export async function submitContact(formData: unknown) {
     return { success: false, error: "rate-limited" };
   }
 
-  const adminEmail = process.env.ADMIN_EMAIL ?? "kauadsouza@gmail.com";
+  // Email sending is optional — only runs when RESEND_API_KEY is configured
+  if (process.env.RESEND_API_KEY) {
+    const { createElement } = await import("react");
+    const { sendEmail } = await import("@/lib/email/resend");
+    const { ContactEmail } = await import("@/lib/email/templates/contact");
 
-  await sendEmail({
-    to: adminEmail,
-    subject: `[Site] Novo contato: ${typeLabels[type] ?? type} — ${name}`,
-    react: createElement(ContactEmail, {
-      name,
-      email,
-      company,
-      type: typeLabels[type] ?? type,
-      budget,
-      message,
-    }),
-    replyTo: email,
-  });
+    const { name, email, company, type, budget, message } = parsed.data;
+    const typeLabels: Record<string, string> = {
+      proposal: "Proposta", partnership: "Parceria", chat: "Conversa", other: "Outro",
+    };
+
+    await sendEmail({
+      to: process.env.ADMIN_EMAIL ?? "kauadsouza@gmail.com",
+      subject: `[Site] Novo contato: ${typeLabels[type] ?? type} — ${name}`,
+      react: createElement(ContactEmail, {
+        name, email, company, type: typeLabels[type] ?? type, budget, message,
+      }),
+      replyTo: email,
+    });
+  }
 
   return { success: true };
 }
