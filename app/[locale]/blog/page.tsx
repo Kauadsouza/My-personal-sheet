@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { useState, useEffect } from "react";
 import type { Post } from "@/lib/mdx";
 import { Badge } from "@/components/ui/Badge";

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { getProjectBySlug, projects } from "@/lib/projects";
 import { Badge } from "@/components/ui/Badge";
 import { FadeIn } from "@/components/motion/FadeIn";

@@ -1,34 +1,19 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter, usePathname } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
 
 const locales = ["pt-BR", "en", "es"] as const;
 const labels: Record<string, string> = { "pt-BR": "BR", en: "EN", es: "ES" };
 
-// Non-default locales that appear as URL prefixes
-const prefixedLocales = ["en", "es"] as const;
-
 export function LocaleSwitcher() {
   const currentLocale = useLocale();
-  const pathname = usePathname();
   const router = useRouter();
+  const pathname = usePathname();
 
-  function switchLocale(next: string) {
-    // Strip any existing locale prefix from the current path
-    let basePath = pathname;
-    for (const locale of prefixedLocales) {
-      if (basePath === `/${locale}`) { basePath = "/"; break; }
-      if (basePath.startsWith(`/${locale}/`)) { basePath = basePath.slice(locale.length + 1); break; }
-    }
-
-    // Build the new URL
-    const newPath = next === "pt-BR"
-      ? basePath || "/"
-      : `/${next}${basePath === "/" ? "" : basePath}`;
-
-    router.push(newPath);
+  function switchLocale(next: (typeof locales)[number]) {
+    router.replace(pathname, { locale: next });
   }
 
   return (

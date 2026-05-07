@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { getAllPosts } from "@/lib/mdx";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { formatDate } from "@/lib/utils";

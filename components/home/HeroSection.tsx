@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { motion } from "framer-motion";
 import { HeroBlob } from "./HeroBlob";
 import { TextReveal } from "@/components/motion/TextReveal";
